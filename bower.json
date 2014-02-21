@@ -1,0 +1,29 @@
+{
+    "name": "Beer Viz",
+    "version": "0.0.1",
+    "authors": [
+        "Jeremy Arca"
+    ],
+    "description": "Data Visualizations from ratebeer.com data",
+    "main": "index.html",
+    "keywords": [
+        "beer",
+        "d3",
+        "dataviz",
+        "datavisualization"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~2.1.0",
+        "d3": "~3.4.2",
+        "topojson": "~1.4.6",
+        "datamaps": "~0.2.3"
+    }
+}
