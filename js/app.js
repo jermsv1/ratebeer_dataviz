@@ -29,7 +29,7 @@
                             var dat_beerz = beerByState(data),
                                 listing = "";
 
-                            console.log(dat_beerz.length);
+                        // console.log(dat_beerz.length);
                             //dat_beers = buildListing(dat_beerz);
                             dat_beerz.sort(function(a, b) {
                                 if (a.order != b.order) {
@@ -134,7 +134,7 @@
         var fillKeys = {};
         var fillColor = alternatingColorScale().domain(counts).range(["#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728", "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f", "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"]);
         fillColor = d3.scale.category20();
-        console.log(_statecounts.totals);
+        //console.log(_statecounts.totals);
         for (var i in _statecounts.totals) {
             fillKeys[i] = fillColor(_statecounts.totals[i]);
         }
