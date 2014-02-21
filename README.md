@@ -9,6 +9,5 @@ Data Visualizations for Ratebeer.com data
 
 ```$ python -m SimpleHTTPServer 8000```
 
-Open brower to:
-```http://localhost:8000```
+Open browser to ```http://localhost:8000```
 
