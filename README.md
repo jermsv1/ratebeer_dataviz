@@ -8,5 +8,4 @@ Setup:
 
 ```http://localhost:8000```
 
-
-![Image](../example.png?raw=true)
+![Image](https://raw.github.com/jermsv1/ratebeer_dataviz/master/example.png)
