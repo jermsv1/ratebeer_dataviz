@@ -1,3 +1,9 @@
+/**
+ *  Simple beer viz map example using ratebeer.com data
+ *  Author: Jeremy Arca
+ *  02-2014
+ **/
+
 (function() {
 
     var _mapdata,
