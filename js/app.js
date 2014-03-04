@@ -29,30 +29,28 @@
                             var dat_beerz = beerByState(data),
                                 listing = "";
 
-                        // console.log(dat_beerz.length);
+                            // console.log(dat_beerz.length);
                             //dat_beers = buildListing(dat_beerz);
                             dat_beerz.sort(function(a, b) {
                                 if (a.order != b.order) {
-                                    return a.year - b.year;
+                                    return b.year - a.year;
                                 } else {
-                                    return a.order - b.order;
+                                    return b.order - a.order;
                                 }
                             });
                             //  console.log(dat_beerz);
+                            var tick_year = 0;
                             dat_beerz.forEach(function(bv, bi) {
-                                listing += "<li>" +
-                                    bv.year +
-                                    " - " +
-                                    " ( " + bv.order + " ) " +
-                                    bv.beer +
-                                    " by: " +
-                                    bv.brewer +
-                                    "</li>";
+                                if (tick_year == 0 || tick_year != bv.year) {
+                                    tick_year = bv.year;
+                                    listing += "<h2>" + bv.year + "</h2>";
+                                }
+                                listing += "<div class='beer_name'>" + bv.beer + "</div>";
+                                listing += "<div class='brewer'>By: " + bv.brewer + "</div><br/>";
                             });
-                            return "<div class='hoverinfo'>" +
-                                "<h2>" + geo.properties.name + " (" + dat_beerz.length + ") </h2>" +
-                                listing +
-                                "</div>";
+                            $('#state_title').html("<h2>" + geo.properties.name + "</h2>");
+                            $('#state_summary').html(listing);
+
                         }
 
                     }
