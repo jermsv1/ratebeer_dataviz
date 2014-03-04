@@ -46,10 +46,12 @@
                                     listing += "<h2>" + bv.year + "</h2>";
                                 }
                                 listing += "<div class='beer_name'>" + bv.beer + "</div>";
-                                listing += "<div class='brewer'>By: " + bv.brewer + "</div><br/>";
+                                listing += "<div class='brewer'>By: <a href='http://www.google.com/search?q=" + bv.brewer + " beer&btnI'>" + bv.brewer + "</a></div><br/>";
                             });
                             $('#state_title').html("<h2>" + geo.properties.name + "</h2>");
                             $('#state_summary').html(listing);
+
+                            return "<div class='hoverinfo'>" + "<h4>" + geo.properties.name + "</h4>" + "</div>";
 
                         }
 
